@@ -2,7 +2,7 @@
 
 -carbón
 
--tela
+-manta de mi cama
 
 -cuerda
 
