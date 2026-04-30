@@ -16,5 +16,5 @@ facil es hacer un asado, facil es causar un incendio, facil es hacer carbon
 
 facil es saltar la cuerda, facil es ser humillado, facil es hacer un nudo
 
-facil como abrigarse, facil como ocultarse.
+facil es abrigarse, facil como ocultarse, facil como hacer la cama.
 
