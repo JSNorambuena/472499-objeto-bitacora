@@ -1,6 +1,6 @@
 # Clase07
 
-# objetos de interes
+## objetos de interes
 
 -carbón
 
@@ -8,7 +8,7 @@
 
 -cuerda
 
-# Ejercicio de las cartas
+## Ejercicio de las cartas
 
 "no temas a cosas porque sean fáciles de hacer"
 
