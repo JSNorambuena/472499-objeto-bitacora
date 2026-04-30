@@ -12,7 +12,7 @@
 
 "no temas a cosas porque sean fáciles de hacer"
 
-relación/reflexión
+## relación/reflexión
 
 facil es hacer un asado, facil es causar un incendio, facil es hacer carbon
 
