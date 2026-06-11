@@ -55,3 +55,71 @@ Un fanzine compilatorio en formato de catálogo. Este libro reunirá todas las b
 ## Boceto montaje 
 
 ![boceto](./boceto.jpg)
+
+
+``#include <SoftwareSerial.h>
+
+SoftwareSerial printer(3, 2);
+
+const int PIN_BOTON = 4;
+bool botonAnterior = HIGH;
+unsigned long ultimaImpresion = 0;
+const int DEBOUNCE = 300; // ms entre impresiones
+
+void imprimir() {
+  // Evitar impresiones dobles muy seguidas
+  if (millis() - ultimaImpresion < DEBOUNCE) return;
+  ultimaImpresion = millis();
+
+  // Inicializar
+  printer.write(0x1B); printer.write(0x40);
+  delay(50);
+
+  // Centrar
+  printer.write(0x1B); printer.write(0x61); printer.write(0x01);
+
+  // Texto grande
+  printer.write(0x1B); printer.write(0x21); printer.write(0x30);
+
+  printer.println("gracias a la vida");
+
+  // Normal + espacios
+  printer.write(0x1B); printer.write(0x21); printer.write(0x00);
+  printer.println(" ");
+  printer.println(" ");
+  printer.println(" ");
+
+  // Corte
+  printer.write(0x1D); printer.write(0x56); printer.write(0x41);
+
+  Serial.println("OK");
+}
+
+void setup() {
+  Serial.begin(9600);
+  printer.begin(9600);
+  pinMode(PIN_BOTON, INPUT_PULLUP);
+  delay(500);
+}
+
+void loop() {
+  // --- Leer botón físico ---
+  bool botonActual = digitalRead(PIN_BOTON);
+
+  // Detectar flanco de bajada (HIGH → LOW = presionado)
+  if (botonAnterior == HIGH && botonActual == LOW) {
+    imprimir();
+  }
+  botonAnterior = botonActual;
+
+  // --- Leer comando de Processing ---
+  if (Serial.available()) {
+    String msg = Serial.readStringUntil('\n');
+    msg.trim();
+    if (msg == "IMPRIMIR") {
+      imprimir();
+    }
+  }
+
+  delay(10);
+}``
