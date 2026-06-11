@@ -56,6 +56,7 @@ Un fanzine compilatorio en formato de catálogo. Este libro reunirá todas las b
 
 ![boceto](./boceto.jpg)
 
+##codigo
 
 ``#include <SoftwareSerial.h>
 
