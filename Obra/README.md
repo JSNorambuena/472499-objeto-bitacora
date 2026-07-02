@@ -101,3 +101,30 @@ Dimensiones: 30x40x15cm (aprox, aún por definir)
 
 ================================
 
+
+# MANUAL DE OPERACIÓN – IMPRESORA CON SELECTOR ROTATIVO
+
+## 1. NAVEGACIÓN
+
+Gira lentamente la perilla para recorrer las opciones del catálogo. La selección aparecerá en pantalla a medida que gires.
+
+## 2. SELECCIÓN
+
+Cuando encuentres la opción que deseas, presiona la perilla hacia adentro como si fuera un botón. El sistema procesará tu selección.
+
+## 3. IMPRESIÓN
+
+La impresora comenzará a generar la boleta automáticamente. Espera a que finalice completamente.
+
+## 4. CORTE
+
+Una vez terminada la impresión, carga el papel hacia adentro mientras lo rasgás suavemente contra los dientes del cortador integrado. Con un movimiento firme y controlado, la boleta se separará.
+
+## 5. RETIRA TU BOLETA
+
+Toma la boleta cuando se haya desprendido completamente del dispositivo.
+
+---
+
+
+
